@@ -21,6 +21,9 @@ for platform in $PLATFORMS; do \
         edo)
             DEVICE=$EDO;
             DTBO="true";;
+        lena)
+            DEVICE=$LENA;
+            DTBO="true";;
     esac
 
     for device in $DEVICE; do \
