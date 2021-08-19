@@ -44,8 +44,9 @@ fi
 
 
 EDO="pdx203 pdx206"
+LENA="pdx213"
 
-PLATFORMS="edo"
+PLATFORMS="edo lena"
 
 # Mkdtimg tool
 MKDTIMG=$ANDROID_ROOT/out/host/linux-x86/bin/mkdtimg
