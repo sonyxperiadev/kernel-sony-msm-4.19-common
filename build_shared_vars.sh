@@ -42,11 +42,11 @@ else
     ANDROID_ROOT="$ANDROID_BUILD_TOP"
 fi
 
-
+GANGES="kirin mermaid"
 EDO="pdx203 pdx206"
 LENA="pdx213"
 
-PLATFORMS="edo lena"
+PLATFORMS="ganges edo lena"
 
 # Mkdtimg tool
 MKDTIMG=$ANDROID_ROOT/out/host/linux-x86/bin/mkdtimg
