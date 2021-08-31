@@ -18,6 +18,9 @@ echo "KERNEL_TMP  : ${KERNEL_TMP}"
 for platform in $PLATFORMS; do \
 
     case $platform in
+        nile)
+            DEVICE=$NILE;
+            DTBO="false";;
         ganges)
             DEVICE=$GANGES;
             DTBO="false";;
