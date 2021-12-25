@@ -1,11 +1,9 @@
 set -e
 # Check if mkdtimg tool exist
-if [ ! -f "$MKDTIMG" ]; then
-    echo "mkdtimg: File not found!"
-    echo "Building mkdtimg"
-    export ALLOW_MISSING_DEPENDENCIES=true
-    $ANDROID_ROOT/build/soong/soong_ui.bash --make-mode mkdtimg
-fi
+[[ ! -f "$MKDTIMG" ]] && MKDTIMG="$ANDROID_ROOT/prebuilts/misc/linux-x86/libufdt/mkdtimg"
+[[ ! -f "$MKDTIMG" ]] && MKDTIMG="$ANDROID_ROOT/system/libufdt/utils/src/mkdtboimg.py"
+[[ ! -f "$MKDTIMG" ]] && (echo "No mkdtbo script/executable found"; exit 1)
+
 
 cd "$KERNEL_TOP"/kernel
 
