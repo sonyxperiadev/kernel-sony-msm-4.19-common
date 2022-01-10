@@ -22,6 +22,9 @@ for platform in $PLATFORMS; do \
         ganges)
             DEVICE=$GANGES;
             DTBO="false";;
+        tama)
+            DEVICE=$TAMA;
+            DTBO="true";;
         edo)
             DEVICE=$EDO;
             DTBO="true";;
