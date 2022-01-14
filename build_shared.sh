@@ -1,9 +1,10 @@
 set -e
 # Check if mkdtimg tool exist
-[[ ! -f "$MKDTIMG" ]] && MKDTIMG="$ANDROID_ROOT/prebuilts/misc/linux-x86/libufdt/mkdtimg"
-[[ ! -f "$MKDTIMG" ]] && MKDTIMG="$ANDROID_ROOT/system/libufdt/utils/src/mkdtboimg.py"
-[[ ! -f "$MKDTIMG" ]] && (echo "No mkdtbo script/executable found"; exit 1)
-
+# Mkdtimg tool
+MKDTIMG=$ANDROID_ROOT/out/host/linux-x86/bin/mkdtimg
+[ ! -f "$MKDTIMG" ] && MKDTIMG="$ANDROID_ROOT/prebuilts/misc/linux-x86/libufdt/mkdtimg"
+[ ! -f "$MKDTIMG" ] && MKDTIMG="$ANDROID_ROOT/system/libufdt/utils/src/mkdtboimg.py"
+[ ! -f "$MKDTIMG" ] && (echo "No mkdtbo script/executable found"; exit 1)
 
 cd "$KERNEL_TOP"/kernel
 
@@ -12,6 +13,7 @@ echo "Your Environment:"
 echo "ANDROID_ROOT: ${ANDROID_ROOT}"
 echo "KERNEL_TOP  : ${KERNEL_TOP}"
 echo "KERNEL_TMP  : ${KERNEL_TMP}"
+echo "MKDTIMG     : ${MKDTIMG}"
 
 for platform in $PLATFORMS; do \
 

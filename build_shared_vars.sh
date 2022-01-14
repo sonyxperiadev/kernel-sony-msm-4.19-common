@@ -50,10 +50,8 @@ LENA="pdx213"
 
 PLATFORMS="nile ganges tama edo lena"
 
-# Mkdtimg tool
-MKDTIMG=$ANDROID_ROOT/out/host/linux-x86/bin/mkdtimg
-
 KERNEL_TOP=$ANDROID_ROOT/kernel/sony/msm-4.19
+
 # $KERNEL_TMP sub dir per script
 KERNEL_TMP=$ANDROID_ROOT/out/${0##*-}/kernel-tmp
 
