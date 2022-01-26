@@ -45,10 +45,11 @@ fi
 NILE="discovery pioneer voyager"
 GANGES="kirin mermaid"
 TAMA="akari apollo akatsuki"
+SEINE="pdx201"
 EDO="pdx203 pdx206"
 LENA="pdx213"
 
-PLATFORMS="nile ganges tama edo lena"
+PLATFORMS="nile ganges tama seine edo lena"
 
 KERNEL_TOP=$ANDROID_ROOT/kernel/sony/msm-4.19
 
