@@ -27,6 +27,9 @@ for platform in $PLATFORMS; do \
         tama)
             DEVICE=$TAMA;
             DTBO="true";;
+        seine)
+            DEVICE=$SEINE;
+            DTBO="true";;
         edo)
             DEVICE=$EDO;
             DTBO="true";;
