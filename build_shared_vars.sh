@@ -58,6 +58,3 @@ KERNEL_TOP=$ANDROID_ROOT/kernel/sony/msm-4.19
 
 # $KERNEL_TMP sub dir per script
 KERNEL_TMP=${build_directory:-$ANDROID_ROOT/out/${0##*-}/kernel-tmp}
-
-export PATH=$PATH:$ANDROID_ROOT/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin
-export PATH=$PATH:$ANDROID_ROOT/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin
