@@ -18,6 +18,9 @@ elif  [ -d "$CLANG_A13" ]; then
     export CLANG=$CLANG_A13
 fi
 
+# Cross Compiler
+CC="clang"
+
 # Build command
 BUILD_ARGS=""
 

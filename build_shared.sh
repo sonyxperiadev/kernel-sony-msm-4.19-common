@@ -56,7 +56,7 @@ for platform in $PLATFORMS; do \
                 make O="$KERNEL_TMP" ARCH=arm64 \
                                           CROSS_COMPILE=aarch64-linux-android- \
                                           CROSS_COMPILE_ARM32=arm-linux-androideabi- \
-                                          -j$(nproc) ${BUILD_ARGS} \
+                                          -j$(nproc) ${BUILD_ARGS} ${CC:+CC="${CC}"} \
                                           aosp_${platform}_${device}_defconfig
 
                 echo "The build may take up to 10 minutes. Please be patient ..."
@@ -65,7 +65,7 @@ for platform in $PLATFORMS; do \
                 make O="$KERNEL_TMP" ARCH=arm64 \
                      CROSS_COMPILE=aarch64-linux-android- \
                      CROSS_COMPILE_ARM32=arm-linux-androideabi- \
-                     -j$(nproc) ${BUILD_ARGS} \
+                     -j$(nproc) ${BUILD_ARGS} ${CC:+CC="${CC}"} \
                      >"$KERNEL_TMP"/build.log 2>&1;
 
                 echo "Copying new kernel image ..."
