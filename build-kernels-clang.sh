@@ -19,7 +19,7 @@ elif  [ -d "$CLANG_A13" ]; then
 fi
 
 # Build command
-BUILD_ARGS="LLVM=1 LLVM_IAS=1"
+BUILD_ARGS=""
 
 PATH=$CLANG:$PATH
 # source shared parts
