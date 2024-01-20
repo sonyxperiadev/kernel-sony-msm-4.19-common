@@ -22,7 +22,7 @@ fi
 CC="clang"
 
 # Build command
-BUILD_ARGS="CLANG_TRIPLE=aarch64-linux-gnu"
+BUILD_ARGS=""
 
 PATH=$CLANG:$PATH
 # source shared parts
