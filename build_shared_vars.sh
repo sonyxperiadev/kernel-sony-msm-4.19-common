@@ -57,4 +57,5 @@ PLATFORMS="nile ganges tama kumano seine edo lena"
 KERNEL_TOP=$ANDROID_ROOT/kernel/sony/msm-4.19
 
 # $KERNEL_TMP sub dir per script
-KERNEL_TMP=${build_directory:-$ANDROID_ROOT/out/${0##*-}/kernel-tmp}
+c=${0##*-}
+KERNEL_TMP=${build_directory:-$ANDROID_ROOT/out/kernel-4.19/${c%%.sh}}
