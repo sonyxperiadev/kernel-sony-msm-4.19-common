@@ -17,8 +17,8 @@ echo "MKDTIMG     : ${MKDTIMG}"
 
 BUILD_ARGS="${BUILD_ARGS} \
 ARCH=arm64 \
-CROSS_COMPILE=aarch64-linux-android- \
-CROSS_COMPILE_ARM32=arm-linux-androideabi- \
+CROSS_COMPILE=aarch64-linux-gnu- \
+CROSS_COMPILE_ARM32=arm-linux-gnueabi- \
 -j$(nproc)"
 
 for platform in $PLATFORMS; do \
